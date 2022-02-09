@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript</title>
+    <style>
+      body {
+        display: inline;
+      }
+      button {
+        border-radius: 10px;
+        margin: 10px;
+        padding: 5px;
+      }
+      .coba {
+        width: 80%;
+        height: 80%;
+        margin: 10px auto;
+        background-color: cornsilk;
+      }
+      #lampu {
+        text-align: center;
+        width: 70%;
+        height: 60%;
+        padding: 20px;
+        border-radius: 10px;
+        background: lightblue;
+        float: right;
+      }
+      #lampu:active {
+        background-color: rgb(255, 127, 217);
+      }
+      #button {
+        width: 20%;
+        height: 550px;
+        background: rgb(238, 231, 231);
+      }
+      #click {
+        width: 100px;
+        background-color: lightblue;
+        padding: 10px;
+        margin: auto;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="coba">
+      <div id="lampu">
+        <img src="norun.png" id="mylampu" />
+      </div>
+      <div id="button">
+        <div id="click">
+          <button class="" onclick="document.getElementById('mylampu').src='on.png'" style="background-color: green; color: aliceblue">ON</button>
+          <button onclick="document.getElementById('mylampu').src='off.png'" style="background-color: red; color: beige">OFF</button>
+          <button onclick="document.getElementById('mylampu').src='norun.png'" style="background-color: darkgray; color: rgb(253, 253, 246)">Restart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
